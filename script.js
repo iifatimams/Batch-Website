@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const startingLang = localStorage.getItem("lang") || "ar";
   const pageBody = document.getElementById("pageBody");
   const langBtn = document.getElementById("langButton");
   const darkBtn = document.getElementById("darkButton");
@@ -220,7 +221,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  const startingLang = localStorage.getItem("lang") || "ar";
   updateLanguage(startingLang);
   updatePrayerTimes();
   setInterval(updatePrayerTimes, 60 * 60 * 1000);
