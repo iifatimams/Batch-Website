@@ -14,6 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobilePrayerToggle = document.getElementById("mobilePrayerToggle");
   const mobilePrayerMenu = document.getElementById("mobilePrayerMenu");
 
+  function getThemeLabel(isDark, lang) {
+    if (lang === "ar") {
+      return isDark ? "الوضع الفاتح" : "الوضع الداكن";
+    } else {
+      return isDark ? "Light Mode" : "Dark Mode";
+    }
+  }
+
   function updateLanguage(lang) {
     const isArabic = lang === "ar";
     pageBody.setAttribute("lang", lang);
@@ -46,6 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updatePrayerTimes();
     syncMobileMenu();
+
+    const currentThemeIsDark = pageBody.classList.contains("dark-mode");
+    darkBtn.textContent = getThemeLabel(currentThemeIsDark, lang);
+    
     localStorage.setItem("lang", lang);
   }
 
@@ -57,13 +69,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const savedTheme = localStorage.getItem("theme") || "light";
   pageBody.classList.add(savedTheme === "dark" ? "dark-mode" : "light-mode");
-  darkBtn.textContent = savedTheme === "dark" ? "Light" : "Dark";
+  darkBtn.textContent = getThemeLabel(savedTheme === "light", startingLang);
+
 
   darkBtn.addEventListener("click", () => {
     const isDark = pageBody.classList.contains("dark-mode");
     pageBody.classList.toggle("dark-mode", !isDark);
     pageBody.classList.toggle("light-mode", isDark);
-    darkBtn.textContent = isDark ? "Dark" : "Light";
+    const currentLang = pageBody.getAttribute("lang");
+    darkBtn.textContent = getThemeLabel(!isDark, currentLang);
     localStorage.setItem("theme", isDark ? "light" : "dark");
     mobileMenu.classList.remove("show");
   });
