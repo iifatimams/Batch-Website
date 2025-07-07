@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accounting Department - Impact Makers</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="Media.css" />
+  <script defer src="Media.js"></script>
+</head>
+
+<body class="light-mode" id="pageBody" lang="ar">
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="index.html" class="logo">
+      <span id="logoAr">صناع الأثر</span>
+      <span id="logoEn" hidden>Impact Makers</span>
+    </a>
+
+    <nav class="nav desktop-menu" id="mainMenu">
+      <ul>
+        <li class="dropdown department-dropdown">
+          <button id="depbtn" class="dropdown-toggle" data-en="Departments" data-ar="الإدارات">Departments</button>
+          <ul class="dropdown-menu" id="departmentMenu">
+            <li><a href="IT.html" data-en="IT Department" data-ar="إدارة التقنية المتقدمة">IT Department</a></li>
+            <li><a href="Acct.html" data-en="Accounting Department" data-ar="إدارة الشؤون المالية">Accounting Department</a></li>
+            <li><a href="hr.html" data-en="HR Department" data-ar="إدارة الموارد البشرية">HR Department</a></li>
+            <li><a href="Media.html" data-en="Media Department" data-ar="وحدة الرؤى الإعلامية">Media Department</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+        <li><a href="AboutUs.html" data-en="About Us" data-ar="عن صناع الأثر">About Us</a></li>
+        <li><a href="internOfWeek.html" data-en="Intern Spotlight" data-ar="متدرب الأسبوع">Intern Spotlight</a></li>
+
+        <li class="dropdown prayer-dropdown">
+          <button id="prayerBtn" class="dropdown-toggle" data-en="🕌 Fajr: 4:10 AM" data-ar="🕌 صلاة الفجر: 4:10">🕌 صلاة الفجر: 4:10</button>
+          <ul class="dropdown-menu" id="prayerMenu">
+            <li data-en="Fajr: 3:55 AM" data-ar="صلاة الفجر: 3:55">صلاة الفجر: 3:55</li>
+            <li data-en="Dhuhr: 12:19 PM" data-ar="صلاة الظهر: 12:19">صلاة الظهر: 12:19</li>
+            <li data-en="Asr: 3:42 PM" data-ar="صلاة العصر: 3:42">صلاة العصر: 3:42</li>
+            <li data-en="Maghrib: 7:11 PM" data-ar="صلاة المغرب: 7:11">صلاة المغرب: 7:11</li>
+            <li data-en="Isha: 8:41 PM" data-ar="صلاة العشاء: 8:41">صلاة العشاء: 8:41</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-controls">
+      <button id="langButton" data-en="العربية" data-ar="English">العربية</button>
+      <button id="darkButton" data-en="Dark Mode" data-ar="الوضع الداكن">Dark Mode</button>
+      <button id="menuButton" class="menu-icon" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="mobile-menu">
+    <ul id="mobileMenuList"></ul>
+
+    <!-- Mobile Prayer Times -->
+    <ul class="mobile-dropdown">
+      <li class="dropdown-toggle" id="mobilePrayerToggle">Fajr</li>
+      <ul class="dropdown-menu" id="mobilePrayerMenu">
+        <li data-en="Fajr: 3:55 AM" data-ar="صلاة الفجر: 3:55">صلاة الفجر: 3:55</li>
+        <li data-en="Dhuhr: 12:19 PM" data-ar="صلاة الظهر: 12:19">صلاة الظهر: 12:19</li>
+        <li data-en="Asr: 3:42 PM" data-ar="صلاة العصر: 3:42">صلاة العصر: 3:42</li>
+        <li data-en="Maghrib: 7:11 PM" data-ar="صلاة المغرب: 7:11">صلاة المغرب: 7:11</li>
+        <li data-en="Isha: 8:41 PM" data-ar="صلاة العشاء: 8:41">صلاة العشاء: 8:41</li>
+      </ul>
+    </ul>
+  </div>
+</body>
+
+   <!-- MAIN CONTENT -->
+    <main>
+      
+      <section id="departments" class="department-section">
+        <!-- Page Title -->
+        <h2 class="dept-title">
+          <span class="lang-en">Accounting Department</span>
+          <span class="lang-ar">إدارة الشؤون المالية</span>
+        </h2>
+
+        <!-- Carousel -->
+        <div class="dept-carousel">
+          <div class="carousel-container">
+            <div class="carousel-slide active">
+              <img src="Images/A1.jpg" alt="Media Team" />
+              <div class="carousel-caption">
+                <span class="lang-en">Accurate account calculations</span>
+                <span class="lang-ar">حسابات دقيقة</span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <img src="Images/A2.jpg" alt="Media Quote" />
+              <div class="carousel-caption">
+                <span class="lang-en">Cash handling and control</span>
+                <span class="lang-ar">إدارة الأموال والرقابة</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="carousel-controls">
+            <button id="prevSlide" aria-label="Previous Slide">&#10094;</button>
+            <button id="nextSlide" aria-label="Next Slide">&#10095;</button>
+          </div>
+        </div>
+
+        <!-- Short Intro Quote -->
+        <div class="dept-intro">
+          <span class="lang-en">“Behind every number, there’s a story of responsibility and trust.”</span>
+          <span class="lang-ar">خلف كل رقم، قصة من المسؤولية والثقة.</span>
+        </div>
+
+          <!-- Vision, Mission, Goals Grid (Simple Version) -->
+          <div class="info-panel-grid">
+
+            <!-- Vision -->
+            <div class="info-panel">
+              <h3>
+                <span class="lang-en">Vision</span>
+                <span class="lang-ar">رؤيتنا</span>
+              </h3>
+              <p>
+                <span class="lang-en">
+                    To achieve financial leadership by ensuring financial stability and providing accurate and reliable information in a timely manner, contributing to strategic decision-making and enhancing institutional performance effectiveness</span>
+                <span class="lang-ar">
+                 تحقيق ريادة مالية من خلال ضمان الاستقرار المالي،￼￼ وتقديم معلومات دقيقة وموثوقة في الوقت المناسب، بما يساهم في دعم القرارات الإستراتيجية وتعزيز فعالية الأداء المؤسسي.
+                </span>
+              </p>
+            </div>
+
+            <!-- Mission -->
+            <div class="info-panel">
+              <h3>
+                <span class="lang-en">Mission</span>
+                <span class="lang-ar">رسالتنا</span>
+              </h3>
+              <p>
+                <span class="lang-en">
+                  We aim to enhance the efficiency of financial resource management for the Job Shadowing Program by adopting innovative accounting practices and implementing well-planned financial policies that ensure transparency, sustainability, and support the program’s developmental goals
+                </span>
+                <span class="lang-ar">
+                  نسعى إلى تعزيز كفاءة إدارة الموارد￼ المالية لبرنامج الظل الوظيفي عبر تبني ممارسات محاسبية مبتكرة، وتطبيق سياسات مالية مدروسة، تضمن الشفافية والاستدامة، وتدعم تحقيق الأهداف التنموية للبرنامج.
+                </span>
+              </p>
+            </div>
+
+
+            <!-- Goals -->
+            <div class="info-panel">
+              <h3>
+                <span class="lang-en">Goals</span>
+                <span class="lang-ar">أهدافنا</span>
+              </h3>
+              <p>
+                <span class="lang-en">
+                  The department focuses on maintaining accurate financial records, tracking profits and losses, and preparing key financial statements. It also manages cash flow, evaluates funding needs, and generates periodic reports to support informed decision-making and ensure financial stability.
+                </span>
+                <span class="lang-ar">
+                  تركز الإدارة على الحفاظ على سجلات مالية دقيقة، وتتبع الأرباح والخسائر، وإعداد البيانات المالية الرئيسية. كما تدير التدفق النقدي، وتقيّم احتياجات التمويل، وتُعد تقارير دورية لدعم اتخاذ القرارات المستنيرة وضمان الاستقرار المالي.
+                </span>
+              </p>
+            </div>
+
+          </div>
+
+
+      </section>
+
+      <section class="team-section" aria-label="Meet the Media Department Team">
+        <h2>
+          <span class="lang-en">Meet the Team</span>
+          <span class="lang-ar">تعرف على الفريق</span>
+        </h2>
+
+        <div class="team-grid" id="teamGrid">
+          <div class="team-card girl">
+            <img src="./Images/Personal Picture/Marwa.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+            <span class="lang-en">Marwa Alowais</span>
+            <span class="lang-ar">مروة العويس</span>
+          </div>
+          <div class="team-card girl">
+            <img src="./Images/Personal Picture/Reem.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+            <span class="lang-en">Reem Alkaabi</span>
+            <span class="lang-ar">ريم الكعبي</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <div id="teamModal" class="team-modal" hidden>
+        <div class="modal-overlay"></div>
+        <div class="modal-box">
+          <button class="close-modal" aria-label="Close modal">&times;</button>
+          <h3 id="modalName">Name</h3>
+          <p id="modalQuote">Quote goes here.</p>
+        </div>
+      </div>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h2 data-en="Professional Shadow Program 2025" data-ar="برنامج الظل الوظيفي 2025"> Professional Shadow Program 2025 </h2>
+          <p data-en="Sharjah Government Media Bureau" data-ar="المكتب الإعلامي لحكومة الشارقة"> Sharjah Government Media Bureau</p>
+        </div>
+        <div class="footer-right">
+          <a href="https://www.instagram.com/shj.media?igsh=MWFoejBiYmdmZXh2Zw==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/shjmedia?s=21" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-en="© 2025 PSP Interns. All rights reserved." data-ar="© 2025 جميع الحقوق محفوظة لمتدربي برنامج الظل الوظيفي."> © 2025 PSP Interns. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IT Department - Impact Makers</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="Media.css" />
+  <script defer src="Media.js"></script>
+</head>
+
+<body class="light-mode" id="pageBody" lang="ar">
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="index.html" class="logo">
+      <span id="logoAr">صناع الأثر</span>
+      <span id="logoEn" hidden>Impact Makers</span>
+    </a>
+
+    <nav class="nav desktop-menu" id="mainMenu">
+      <ul>
+        <li class="dropdown department-dropdown">
+          <button id="depbtn" class="dropdown-toggle" data-en="Departments" data-ar="الإدارات">Departments</button>
+          <ul class="dropdown-menu" id="departmentMenu">
+            <li><a href="IT.html" data-en="IT Department" data-ar="إدارة التقنية المتقدمة">IT Department</a></li>
+            <li><a href="Acct.html" data-en="Accounting Department" data-ar="إدارة الشؤون المالية">Accounting Department</a></li>
+            <li><a href="hr.html" data-en="HR Department" data-ar="إدارة الموارد البشرية">HR Department</a></li>
+            <li><a href="Media.html" data-en="Media Department" data-ar="وحدة الرؤى الإعلامية">Media Department</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+        <li><a href="AboutUs.html" data-en="About Us" data-ar="عن صناع الأثر">About Us</a></li>
+        <li><a href="internOfWeek.html" data-en="Intern Spotlight" data-ar="متدرب الأسبوع">Intern Spotlight</a></li>
+
+        <li class="dropdown prayer-dropdown">
+          <button id="prayerBtn" class="dropdown-toggle" data-en="🕌 Fajr: 4:10 AM" data-ar="🕌 صلاة الفجر: 4:10">🕌 صلاة الفجر: 4:10</button>
+          <ul class="dropdown-menu" id="prayerMenu">
+            <li data-en="Fajr: 3:55 AM" data-ar="صلاة الفجر: 3:55">صلاة الفجر: 3:55</li>
+            <li data-en="Dhuhr: 12:19 PM" data-ar="صلاة الظهر: 12:19">صلاة الظهر: 12:19</li>
+            <li data-en="Asr: 3:42 PM" data-ar="صلاة العصر: 3:42">صلاة العصر: 3:42</li>
+            <li data-en="Maghrib: 7:11 PM" data-ar="صلاة المغرب: 7:11">صلاة المغرب: 7:11</li>
+            <li data-en="Isha: 8:41 PM" data-ar="صلاة العشاء: 8:41">صلاة العشاء: 8:41</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-controls">
+      <button id="langButton" data-en="العربية" data-ar="English">العربية</button>
+      <button id="darkButton" data-en="Dark Mode" data-ar="الوضع الداكن">Dark Mode</button>
+      <button id="menuButton" class="menu-icon" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="mobile-menu">
+    <ul id="mobileMenuList"></ul>
+
+    <!-- Mobile Prayer Times -->
+    <ul class="mobile-dropdown">
+      <li class="dropdown-toggle" id="mobilePrayerToggle">Fajr</li>
+      <ul class="dropdown-menu" id="mobilePrayerMenu">
+        <li data-en="Fajr: 3:55 AM" data-ar="صلاة الفجر: 3:55">صلاة الفجر: 3:55</li>
+        <li data-en="Dhuhr: 12:19 PM" data-ar="صلاة الظهر: 12:19">صلاة الظهر: 12:19</li>
+        <li data-en="Asr: 3:42 PM" data-ar="صلاة العصر: 3:42">صلاة العصر: 3:42</li>
+        <li data-en="Maghrib: 7:11 PM" data-ar="صلاة المغرب: 7:11">صلاة المغرب: 7:11</li>
+        <li data-en="Isha: 8:41 PM" data-ar="صلاة العشاء: 8:41">صلاة العشاء: 8:41</li>
+      </ul>
+    </ul>
+  </div>
+</body>
+
+   <!-- MAIN CONTENT -->
+    <main>
+      
+      <section id="departments" class="department-section">
+        <!-- Page Title -->
+        <h2 class="dept-title">
+          <span class="lang-en" hidden>IT Department</span>
+          <span class="lang-ar">إدارة التقنية المتقدمة</span>
+        </h2>
+
+        <!-- Carousel -->
+        <div class="dept-carousel">
+          <div class="carousel-container">
+            <div class="carousel-slide active">
+              <img src="Images/I1.jpg" alt="Media Team" />
+              <div class="carousel-caption">
+                <span class="lang-en" hidden>Discussing the layout of the Website</span>
+                <span class="lang-ar">مناقشة تخطيط الموقع</span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <img src="Images/i2.jpg" alt="Media Quote" />
+              <div class="carousel-caption">
+                <span class="lang-en" hidden>Coding Application</span>
+                <span class="lang-ar">تطبيق البرمجة </span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <img src="Images/i3.jpg" alt="Candid Moment" />
+              <div class="carousel-caption">
+                <span class="lang-en" hidden>Planning for Cybersecurity Booklet</span>
+                <span class="lang-ar"> التخطيط لكتيب الأمن السيبراني </span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <img src="Images/i4.JPG" alt="Candid Moment" />
+              <div class="carousel-caption">
+                <span class="lang-en" hidden>Preparing for the Workshop</span>
+                <span class="lang-ar">التحضير للورشة</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="carousel-controls">
+            <button id="prevSlide" aria-label="Previous Slide">&#10094;</button>
+            <button id="nextSlide" aria-label="Next Slide">&#10095;</button>
+          </div>
+        </div>
+
+        <!-- Short Intro Quote -->
+        <div class="dept-intro">
+          <span class="lang-en" hidden>“Behind every number, there’s a story of responsibility and trust.”</span>
+          <span class="lang-ar">خلف كل رقم، قصة من المسؤولية والثقة.</span>
+        </div>
+
+          <!-- Vision, Mission, Goals Grid (Simple Version) -->
+          <div class="info-panel-grid">
+
+            <!-- Vision -->
+            <div class="info-panel">
+              <h3>
+                <span class="lang-en">Vision</span>
+                <span class="lang-ar">رؤيتنا</span>
+              </h3>
+              <p>
+                <span class="lang-en">
+                    To be the leading technology department in driving digital transformation efficiently and smoothly, through reliable and user-friendly systems and technologies that contribute to supporting business and achieving goals, while ensuring the highest levels of security and flexibility</span>
+                <span class="lang-ar">
+                    أن نكون الإدارة التقنية الرائدة في قيادة التحول الرقمي بكفاءة وسلاسة، من خلال أنظمة وتقنيات موثوقة وسهلة الاستخدام، تسهم في دعم الأعمال وتحقيق الأهداف، مع ضمان أعلى مستويات الأمان والمرونة</span>
+              </p>
+            </div>
+
+            <!-- Mission -->
+            <div class="info-panel">
+              <h3>
+                <span class="lang-en">Mission</span>
+                <span class="lang-ar">رسالتنا</span>
+              </h3>
+              <p>
+                <span class="lang-en">
+                  We are committed to providing reliable, secure, and user-friendly technological solutions that support all departments of the organization in performing their tasks with high efficiency. We work through a robust infrastructure, quick response, and the use of smart tools to simplify work, reduce downtime, and enhance user experience, while keen on developing our staff's skills and building a sustainable technological environment that keeps pace with future developments
+                </span>
+                <span class="lang-ar">
+                    نلتزم بتوفير حلول تقنية موثوقة وآمنة وسهلة الاستخدام، تدعم جميع إدارات المؤسسة في أداء مهامها بكفاءة عالية. ونعمل من خلال بنية تحتية قوية، واستجابة سريعة، واستخدام أدوات ذكية على تبسيط العمل وتقليل الأعطال وتعزيز تجربة المستخدم، مع الحرص على تطوير مهارات كوادرنا وبناء بيئة تقنية مستدامة تواكب التطورات المستقبلية</span>
+              </p>
+            </div>
+
+
+            <!-- Goals -->
+            <div class="info-panel">
+              <h3>
+                <span class="lang-en">Goals</span>
+                <span class="lang-ar">أهدافنا</span>
+              </h3>
+              <p>
+                <span class="lang-en">
+                Increase System Efficiency: By establishing a technological infrastructure that minimizes downtime and ensures business continuity. Enhance Information Security: By implementing the highest protection standards to ensure data safety and security. Improve Trainee Experience: By providing fast, clear, and user-friendly technical support. Automate Operations: By converting processes to automated systems that rely on technological solutions to speed up operations and reduce errors. Strengthen Inter-Departmental Integration: Through interconnected systems that facilitate flexible communication and data exchange.
+                </span>
+                <span class="lang-ar">
+                    رفع كفاءة الأنظمة من خلال بنية تحتية تقنية تقلل التوقفات وتضمن استمرارية العمل. تعزيز أمن المعلومات عبر تطبيق أعلى معايير الحماية لضمان سلامة وأمن البيانات. تحسين تجربة المتدربين من خلال تقديم دعم فني سريع وواضح وسهل الاستخدام. تحويل العمليات إلى أنظمة آلية تعتمد على حلول تقنية، لتسريع العمليات، وتقليل الأخطاء. تعزيز التكامل بين الإدارات من خلال أنظمة مترابطة تسهّل التواصل وتبادل البيانات بمرونة.
+                </span>
+              </p>
+            </div>
+
+          </div>
+
+
+      </section>
+
+      <section class="team-section" aria-label="Meet the IT Department Team">
+        <h2>
+          <span class="lang-en">Meet the Team</span>
+          <span class="lang-ar">تعرف على الفريق</span>
+        </h2>
+
+        <div class="team-grid" id="teamGrid">
+          <div class="team-card girl">
+            <img src="./Images/Personal Picture/Roman.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+            <span class="lang-en">Roman Ghanchi</span>
+            <span class="lang-ar">رومان غانشي</span>
+          </div>
+        <div class="team-card boy">
+          <img
+            src="./Images/Personal Picture/Ahmed Gheyas.jpg" class="team-avatar"
+            onerror="this.onerror=null;this.src='./Images/boy.jpg';"
+            />
+            <span class="lang-en" hidden>Ahmed Gheyas</span>
+            <span class="lang-ar">أحمد غياث</span>
+          </div>
+        <div class="team-card boy">
+          <img
+            src="./Images/Personal Picture/Omar Amer.jpg" class="team-avatar"
+            onerror="this.onerror=null;this.src='./Images/boy.jpg';"
+            />
+            <span class="lang-en" hidden>Omar Amer</span>
+            <span class="lang-ar">عمر عامر</span>
+          </div>
+        <div class="team-card boy">
+          <img
+            src="./Images/Personal Picture/Mohammed.jpg" class="team-avatar"
+            onerror="this.onerror=null;this.src='./Images/boy.jpg';"
+            />
+            <span class="lang-en" hidden>Mohammad Rahimi</span>
+            <span class="lang-ar">محمد رحيمي</span>
+          </div>
+        <div class="team-card boy">
+          <img
+            src="./Images/Personal Picture/Majid.jpg" class="team-avatar"
+            onerror="this.onerror=null;this.src='./Images/boy.jpg';"
+            />
+            <span class="lang-en" hidden>Majid Binirasheed</span>
+            <span class="lang-ar">ماجد بني رشيد</span>
+          </div>
+        <div class="team-card girl">
+          <img
+            src="./Images/Personal Picture/Fatima Al Sinan.jpg" class="team-avatar"
+            onerror="this.onerror=null;this.src='./Images/girl.jpg';"
+            />
+            <span class="lang-en" hidden>Fatima Al Sinan</span>
+            <span class="lang-ar">فاطمة آل سنان</span>
+          </div>
+        <div class="team-card girl">
+          <img
+          src="./Images/Personal Picture/Shaima.jpg" class="team-avatar"
+          onerror="this.onerror=null;this.src='./Images/girl.jpg';"
+          />
+            <span class="lang-en" hidden>Shaima Hameed</span>
+            <span class="lang-ar">شيماء حميد</span>
+          </div>
+        <div class="team-card girl">
+          <img
+            src="./Images/Personal Picture/Shahad.jpg" class="team-avatar"
+            onerror="this.onerror=null;this.src='./Images/girl.jpg';"
+            />
+            <span class="lang-en" hidden>Shahd Saleem</span>
+            <span class="lang-ar">شهد سليم</span>
+          </div>
+        <div class="team-card girl">
+          <img
+            src="./Images/Personal Picture/Meera.jpg" class="team-avatar"
+            onerror="this.onerror=null;this.src='./Images/girl.jpg';"
+            />
+            <span class="lang-en" hidden>Meera Al Ali</span>
+            <span class="lang-ar">ميرة آل علي</span>
+          </div>
+        <div class="team-card girl">
+          <img
+            src="./Images/Personal Picture/Jana.jpg" class="team-avatar"
+            onerror="this.onerror=null;this.src='./Images/girl.jpg';"
+            />
+            <span class="lang-en" hidden>Jana Nofal</span>
+            <span class="lang-ar">جنى نوفل</span>
+          </div>
+        <div class="team-card girl">
+          <img
+            src="./Images/Personal Picture/Shatha.jpg" class="team-avatar"
+            onerror="this.onerror=null;this.src='./Images/girl.jpg';"
+            />
+            <span class="lang-en" hidden>Shathah Saleem</span>
+            <span class="lang-ar">شذى سليم</span>
+          </div>
+        <div class="team-card girl">
+          <img
+            src="./Images/Personal Picture/Fatima Shirin.jpg" class="team-avatar"
+            onerror="this.onerror=null;this.src='./Images/girl.jpg';"
+            />
+            <span class="lang-en" hidden>Fatima  Shirin</span>
+            <span class="lang-ar">فاطمة شيرين</span>
+          </div>
+        <div class="team-card girl">
+          <img
+            src="./Images/Personal Picture/Maha.jpg" class="team-avatar"
+            onerror="this.onerror=null;this.src='./Images/girl.jpg';"
+            />
+            <span class="lang-en" hidden>Maha Khalifa</span>
+            <span class="lang-ar">مها خليفه</span>
+          </div>
+        <div class="team-card girl">
+          <img
+            src="./Images/Personal Picture/Sara Eltawil.jpg" class="team-avatar"
+            onerror="this.onerror=null;this.src='./Images/girl.jpg';"
+            />
+            <span class="lang-en" hidden>Sara Eltawil</span>
+            <span class="lang-ar">ساره الطويل</span>
+          </div>
+        <div class="team-card girl">
+          <img
+            src="./Images/Personal Picture/Tala.jpg" class="team-avatar"
+            onerror="this.onerror=null;this.src='./Images/girl.jpg';"
+            />
+            <span class="lang-en" hidden>Tala Yousef</span>
+            <span class="lang-ar">تالا يوسف</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <div id="teamModal" class="team-modal" hidden>
+        <div class="modal-overlay"></div>
+        <div class="modal-box">
+          <button class="close-modal" aria-label="Close modal">&times;</button>
+          <h3 id="modalName">Name</h3>
+          <p id="modalQuote">Quote goes here.</p>
+        </div>
+      </div>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h2 data-en="Professional Shadow Program 2025" data-ar="برنامج الظل الوظيفي 2025"> Professional Shadow Program 2025 </h2>
+          <p data-en="Sharjah Government Media Bureau" data-ar="المكتب الإعلامي لحكومة الشارقة"> Sharjah Government Media Bureau</p>
+        </div>
+        <div class="footer-right">
+          <a href="https://www.instagram.com/shj.media?igsh=MWFoejBiYmdmZXh2Zw==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/shjmedia?s=21" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-en="© 2025 PSP Interns. All rights reserved." data-ar="© 2025 جميع الحقوق محفوظة لمتدربي برنامج الظل الوظيفي."> © 2025 PSP Interns. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us - Impact Makers</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="AboutUs.css" />
+    <script defer src="AboutUs.js"></script>
+  </head>
+
+  <body class="light-mode" id="pageBody" lang="ar">
+    <!-- HEADER -->
+  <header class="header">
+    <a href="index.html" class="logo">
+      <span id="logoAr">صناع الأثر</span>
+      <span id="logoEn" hidden>Impact Makers</span>
+    </a>
+
+    <nav class="nav desktop-menu" id="mainMenu">
+      <ul>
+        <li class="dropdown department-dropdown">
+          <button id="depbtn" class="dropdown-toggle" data-en="Departments" data-ar="الإدارات">Departments</button>
+          <ul class="dropdown-menu" id="departmentMenu">
+            <li><a href="IT.html" data-en="IT Department" data-ar="إدارة التقنية المتقدمة">IT Department</a></li>
+            <li><a href="Acct.html" data-en="Accounting Department" data-ar="إدارة الشؤون المالية">Accounting Department</a></li>
+            <li><a href="hr.html" data-en="HR Department" data-ar="إدارة الموارد البشرية">HR Department</a></li>
+            <li><a href="Media.html" data-en="Media Department" data-ar="وحدة الرؤى الإعلامية">Media Department</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+        <li><a href="AboutUs.html" data-en="About Us" data-ar="عن صناع الأثر">About Us</a></li>
+        <li><a href="internOfWeek.html" data-en="Intern Spotlight" data-ar="متدرب الأسبوع">Intern Spotlight</a></li>
+
+        <li class="dropdown prayer-dropdown">
+          <button id="prayerBtn" class="dropdown-toggle" data-en="🕌 Fajr: 4:10 AM" data-ar="🕌 صلاة الفجر: 4:10">🕌 صلاة الفجر: 4:10</button>
+          <ul class="dropdown-menu" id="prayerMenu">
+            <li data-en="Fajr: 3:55 AM" data-ar="صلاة الفجر: 3:55">صلاة الفجر: 3:55</li>
+            <li data-en="Dhuhr: 12:19 PM" data-ar="صلاة الظهر: 12:19">صلاة الظهر: 12:19</li>
+            <li data-en="Asr: 3:42 PM" data-ar="صلاة العصر: 3:42">صلاة العصر: 3:42</li>
+            <li data-en="Maghrib: 7:11 PM" data-ar="صلاة المغرب: 7:11">صلاة المغرب: 7:11</li>
+            <li data-en="Isha: 8:41 PM" data-ar="صلاة العشاء: 8:41">صلاة العشاء: 8:41</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-controls">
+      <button id="langButton" data-en="العربية" data-ar="English">العربية</button>
+      <button id="darkButton" data-en="Dark Mode" data-ar="الوضع الداكن">Dark Mode</button>
+      <button id="menuButton" class="menu-icon" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="mobile-menu">
+    <ul id="mobileMenuList"></ul>
+
+    <!-- Mobile Prayer Times -->
+    <ul class="mobile-dropdown">
+      <li class="dropdown-toggle" id="mobilePrayerToggle">Fajr</li>
+      <ul class="dropdown-menu" id="mobilePrayerMenu">
+        <li data-en="Fajr: 3:55 AM" data-ar="صلاة الفجر: 3:55">صلاة الفجر: 3:55</li>
+        <li data-en="Dhuhr: 12:19 PM" data-ar="صلاة الظهر: 12:19">صلاة الظهر: 12:19</li>
+        <li data-en="Asr: 3:42 PM" data-ar="صلاة العصر: 3:42">صلاة العصر: 3:42</li>
+        <li data-en="Maghrib: 7:11 PM" data-ar="صلاة المغرب: 7:11">صلاة المغرب: 7:11</li>
+        <li data-en="Isha: 8:41 PM" data-ar="صلاة العشاء: 8:41">صلاة العشاء: 8:41</li>
+      </ul>
+    </ul>
+  </div>
+
+    <section class="about-us">
+      <h1>
+        <span class="lang-en" hidden>About Us</span>
+        <span class="lang-ar">عن صناع الأثر</span>
+      </h1>
+
+      <div class="video-container">
+        <video controls muted loop playsinline>
+          <source src="Images/SGMB.MP4" type="video/mp4" data-en="Your browser does not support the video tag." data-ar="المتصفح الذي تستخدمه لا يدعم تشغيل الفيديو"/>
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <p>
+        <span class="lang-en" hidden>
+          <strong>The Professional Shadow Program</strong> is a practical training initiative organized by the <strong>Sharjah Governmental Media Bureau</strong> to train university students. The program aims to give participants hands-on experience with the workflows, regulations, and systems in place across the Media Bureau.
+      
+          It offers trainees the opportunity to <strong>mimic real-life organizations</strong>, where each department has its own tasks and responsibilities, and participants learn how to communicate and collaborate with other virtual departments to complete projects. In addition, the program includes specialized workshops organized by the Training Department and delivered by professionals from each department of the Bureau.
+      
+          <strong>Sheikha Noor Almualla</strong>, an executive in the Training Department, is responsible for supervising and guiding interns throughout their journey in the Professional Shadow Program.
+      
+          The <strong>second batch</strong> of this program is launched under the name <strong>“Impact Makers”</strong>, reflecting the Bureau’s commitment to supporting a new generation of innovators by equipping them with practical knowledge and skills that prepare them to contribute effectively to the media and communication sector.
+        </span>
+      
+        <span class="lang-ar">
+          <strong>برنامج الظل الوظيفي المهني</strong> هو مبادرة تدريبية عملية ينظمها <strong>المكتب الإعلامي الحكومي في الشارقة</strong> لتدريب طلاب الجامعات. يهدف البرنامج إلى إتاحة الفرصة للمشاركين لاكتساب خبرة عملية مباشرة في آليات العمل والأنظمة والقوانين المطبقة داخل المكتب الإعلامي.
+      
+          يمنح البرنامج المتدربين الفرصة لتجربة بيئة تحاكي المؤسسات الواقعية، حيث يكون لكل إدارة مهامها ومسؤولياتها الخاصة، ويتعلم المشاركون كيفية التواصل والتنسيق مع الإدارات الافتراضية الأخرى لإنجاز المهام والمشاريع المشتركة. بالإضافة إلى ذلك، يتضمن البرنامج ورش عمل متخصصة تنظمها إدارة التدريب ويقدمها مختصون من مختلف إدارات المكتب.
+      
+          تتولى <strong>الشيخة نور المعلا</strong>، وهي تنفيذية في إدارة التدريب، الإشراف على تدريب المتدربين ومتابعتهم طوال فترة مشاركتهم في برنامج الظل الوظيفي المهني.
+      
+          تنطلق <strong>الدفعة الثانية</strong> من هذا البرنامج تحت مسمى <strong>"صنّاع الأثر"</strong>، وذلك في إطار التزام المكتب الإعلامي بدعم جيل جديد من المبدعين وتمكينهم بالمعرفة العملية والمهارات التي تؤهلهم للإسهام بفاعلية في قطاع الإعلام والاتصال المؤسسي.
+        </span>
+      </p>
+
+      <!-- Supervisor Section -->
+      <section class="supervisors">
+        <h2>
+          <span class="lang-en" hidden>Supervisor</span>
+          <span class="lang-ar">المشرف</span>
+        </h2>
+
+        <div class="supervisor-list">
+          <div class="supervisor">
+            <!-- <img 
+            src="Images/Noor.jpg" 
+            alt="Photo of Noor Al-Mualla" 
+            class="supervisor-photo-placeholder"
+            aria-label="Photo of Noor Al-Mualla"
+          /> -->
+            <p class="name lang-en" hidden>Sheikha Noor Al-Mualla</p>
+            <p class="lang-ar"><strong>الشيخة نور المعلا</strong></p>
+            <p class="position">
+              <span class="lang-en" hidden>Executive in Training Department</span>
+              <span class="lang-ar">تنفيذي في إدارة التدريب</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h2 data-en="Professional Shadow Program 2025" data-ar="برنامج الظل الوظيفي 2025"> Professional Shadow Program 2025 </h2>
+          <p data-en="Sharjah Government Media Bureau" data-ar="المكتب الإعلامي لحكومة الشارقة"> Sharjah Government Media Bureau</p>
+        </div>
+        <div class="footer-right">
+          <a href="https://www.instagram.com/shj.media?igsh=MWFoejBiYmdmZXh2Zw==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/shjmedia?s=21" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-en="© 2025 PSP Interns. All rights reserved." data-ar="© 2025 جميع الحقوق محفوظة لمتدربي برنامج الظل الوظيفي."> © 2025 PSP Interns. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

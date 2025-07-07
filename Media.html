@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Media Department - Impact Makers</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Media.css" />
+    <script defer src="Media.js"></script>
+  </head>
+
+  <body class="light-mode" id="pageBody" lang="ar">
+    <!-- HEADER -->
+  <header class="header">
+    <a href="index.html" class="logo">
+      <span id="logoAr">صناع الأثر</span>
+      <span id="logoEn" hidden>Impact Makers</span>
+    </a>
+
+    <nav class="nav desktop-menu" id="mainMenu">
+      <ul>
+        <li class="dropdown department-dropdown">
+          <button id="depbtn" class="dropdown-toggle" data-en="Departments" data-ar="الإدارات">Departments</button>
+          <ul class="dropdown-menu" id="departmentMenu">
+            <li><a href="IT.html" data-en="IT Department" data-ar="إدارة التقنية المتقدمة">IT Department</a></li>
+            <li><a href="Acct.html" data-en="Accounting Department" data-ar="إدارة الشؤون المالية">Accounting Department</a></li>
+            <li><a href="hr.html" data-en="HR Department" data-ar="إدارة الموارد البشرية">HR Department</a></li>
+            <li><a href="Media.html" data-en="Media Department" data-ar="وحدة الرؤى الإعلامية">Media Department</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+        <li><a href="AboutUs.html" data-en="About Us" data-ar="عن صناع الأثر">About Us</a></li>
+        <li><a href="internOfWeek.html" data-en="Intern Spotlight" data-ar="متدرب الأسبوع">Intern Spotlight</a></li>
+
+        <li class="dropdown prayer-dropdown">
+          <button id="prayerBtn" class="dropdown-toggle" data-en="🕌 Fajr: 4:10 AM" data-ar="🕌 صلاة الفجر: 4:10">🕌 صلاة الفجر: 4:10</button>
+          <ul class="dropdown-menu" id="prayerMenu">
+            <li data-en="Fajr: 3:55 AM" data-ar="صلاة الفجر: 3:55">صلاة الفجر: 3:55</li>
+            <li data-en="Dhuhr: 12:19 PM" data-ar="صلاة الظهر: 12:19">صلاة الظهر: 12:19</li>
+            <li data-en="Asr: 3:42 PM" data-ar="صلاة العصر: 3:42">صلاة العصر: 3:42</li>
+            <li data-en="Maghrib: 7:11 PM" data-ar="صلاة المغرب: 7:11">صلاة المغرب: 7:11</li>
+            <li data-en="Isha: 8:41 PM" data-ar="صلاة العشاء: 8:41">صلاة العشاء: 8:41</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-controls">
+      <button id="langButton" data-en="العربية" data-ar="English">العربية</button>
+      <button id="darkButton" data-en="Dark Mode" data-ar="الوضع الداكن">Dark Mode</button>
+      <button id="menuButton" class="menu-icon" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="mobile-menu">
+    <ul id="mobileMenuList"></ul>
+
+    <!-- Mobile Prayer Times -->
+    <ul class="mobile-dropdown">
+      <li class="dropdown-toggle" id="mobilePrayerToggle">Fajr</li>
+      <ul class="dropdown-menu" id="mobilePrayerMenu">
+        <li data-en="Fajr: 3:55 AM" data-ar="صلاة الفجر: 3:55">صلاة الفجر: 3:55</li>
+        <li data-en="Dhuhr: 12:19 PM" data-ar="صلاة الظهر: 12:19">صلاة الظهر: 12:19</li>
+        <li data-en="Asr: 3:42 PM" data-ar="صلاة العصر: 3:42">صلاة العصر: 3:42</li>
+        <li data-en="Maghrib: 7:11 PM" data-ar="صلاة المغرب: 7:11">صلاة المغرب: 7:11</li>
+        <li data-en="Isha: 8:41 PM" data-ar="صلاة العشاء: 8:41">صلاة العشاء: 8:41</li>
+      </ul>
+    </ul>
+  </div>
+  </body>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section id="departments" class="department-section">
+      <!-- Page Title -->
+      <h2 class="dept-title">
+        <span class="lang-en">Media Department</span>
+        <span class="lang-ar">وحدة الرؤى الإعلامية</span>
+      </h2>
+
+      <!-- Carousel -->
+      <div class="dept-carousel">
+        <div class="carousel-container">
+          <div class="carousel-slide active">
+            <img src="Images/M3.jpg" alt="Media Team" />
+            <div class="carousel-caption">
+              <span class="lang-en">Capturing Portraits at Gallery X</span>
+              <span class="lang-ar">التقاط الصور الشخصية في معرض X</span>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="Images/M4.jpg" alt="Media Quote" />
+            <div class="carousel-caption">
+              <span class="lang-en">Studio Lighting Calibration</span>
+              <span class="lang-ar">معايرة إضاءة الاستوديو</span>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="Images/M5.jpg" alt="Candid Moment" />
+            <div class="carousel-caption">
+              <span class="lang-en">Camera Setup & Framing</span>
+              <span class="lang-ar">إعداد الكاميرا والتأطير</span>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="Images/M6.jpg" alt="Candid Moment" />
+            <div class="carousel-caption">
+              <span class="lang-en">Final Adjustments</span>
+              <span class="lang-ar">التعديلات النهائية</span>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="Images/M7.jpg" alt="Candid Moment" />
+            <div class="carousel-caption">
+              <span class="lang-en">On Set: Filming Against Green Screen</span>
+              <span class="lang-ar"
+                >في موقع التصوير: التصوير أمام الشاشة الخضراء</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <div class="carousel-controls">
+          <button id="prevSlide" aria-label="Previous Slide">&#10094;</button>
+          <button id="nextSlide" aria-label="Next Slide">&#10095;</button>
+        </div>
+      </div>
+
+      <!-- Short Intro Quote -->
+      <div class="dept-intro">
+        <span class="lang-en"
+          >“We live the stories we tell — not from afar, but from within.”</span
+        >
+        <span class="lang-ar"
+          >نحن نعيش القصص التي نرويها، لا نُراقبها من بعيد.</span
+        >
+      </div>
+
+      <!-- Vision, Mission, Goals Grid (Simple Version) -->
+      <div class="info-panel-grid">
+        <!-- Vision -->
+        <div class="info-panel">
+          <h3>
+            <span class="lang-en">Vision</span>
+            <span class="lang-ar">رؤيتنا</span>
+          </h3>
+          <p>
+            <span class="lang-en">
+              To create media that isn’t consumed and forgotten… but remembered,
+              shared, and leaves a lasting impact. Media that is talked about,
+              not erased from memory
+            </span>
+            <span class="lang-ar">
+              أن نصنع إعلامًا لا يُستهلَك وينتهي… بل يُروى، يُتداول، ويُبقي أثره
+              حيًّا. إعلامًا يُحكى عنه، لا يُنسى
+            </span>
+          </p>
+        </div>
+
+        <!-- Mission -->
+        <div class="info-panel">
+          <h3>
+            <span class="lang-en">Mission</span>
+            <span class="lang-ar">رسالتنا</span>
+          </h3>
+          <p>
+            <span class="lang-en">
+              Every word we speak comes from within, from genuine curiosity,
+              sincere concern, and a love that isn’t forced. We don’t fill
+              airtime with noise — we fill it with meaning. We tell stories that
+              reflect real people — without exaggeration or mockery. We speak to
+              this generation in its own language, not in a distant or
+              condescending tone. We present its issues as they are, without
+              filters… because we live them — we don’t observe from afar. We are
+              not spectators of reality — we are part of it. We don’t just
+              report events… we understand them, analyze them, and highlight the
+              forgotten angles.
+            </span>
+            <span class="lang-ar">
+              كل كلمة نقولها تبدأ من الداخل…من فضول حقيقي، ومن قلق صادق، ومن حب
+              لا يتكلّف.نحن لا نملأ فراغ البث… نحن نملأه بالمعنى. نروي قصصًا
+              تشبه الناس، لا تُجمّلهم ولا تُسخّفهم.نُخاطب الجيل بلغته، لا بلغة
+              متعالية أو بعيدة. ننقل قضاياه كما هي، دون رتوش… لأننا نعيشها، لا
+              نُراقبها من بعيد. لسنا متفرجين على الواقع، نحن جزء منه. نحن لا
+              ننقل الحدث فقط… بل نفهمه، نحلّله، ونُضيء جوانبه المنسية.
+            </span>
+          </p>
+        </div>
+
+        <!-- Goals -->
+        <div class="info-panel">
+          <h3>
+            <span class="lang-en">Goals</span>
+            <span class="lang-ar">أهدافنا</span>
+          </h3>
+          <p>
+            <span class="lang-en">
+              To transform energy into messages, and messages into
+              awareness,because media that doesn’t create change is just an
+              echo. To teach ourselves to think before we speak, because
+              awareness is not shaped by words alone, but by the understanding
+              that precedes them. To restore confidence in the voice of this
+              generation — not to wait for validation, Because we don’t ask for
+              space… we create it
+            </span>
+            <span class="lang-ar">
+              أن نُحوّل الطاقات إلى رسائل، والرسائل إلى وعي، لأن الإعلام الذي لا
+              يُغيّر… ليس إعلامًا، بل صدى. أن نُعلّم أنفسنا التفكير قبل النطق،
+              لأن الوعي لا يُصاغ بالكلمات فقط، بل بما يسبقها من إدراك. أن نُعيد
+              الثقة بصوت الجيل، لا أن ننتظر من يمنحنا شرعية ، فنحن لا نُطالب
+              بالمساحة… نحن نخلقها
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet the Team Section (Hall of Fame Style) -->
+    <section class="team-section" aria-label="Meet the Media Department Team">
+      <h2>
+        <span class="lang-en">Meet the Team</span>
+        <span class="lang-ar">تعرف على الفريق</span>
+      </h2>
+
+      <div class="team-grid" id="teamGrid">
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/Nagham.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+          <span class="lang-en">Nagham Mhish</span>
+          <span class="lang-ar">نغم محيش</span>
+        </div>
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/Sara Azat.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+          <span class="lang-en">Sara Azat</span>
+          <span class="lang-ar">سارة عزت</span>
+        </div>
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/Jawaher.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+          <span class="lang-en">Jawahar Al Dibsawi</span>
+          <span class="lang-ar">جواهر الدبساوي</span>
+        </div>
+        <div class="team-card boy">
+          <img src="./Images/Personal Picture/ahmad.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/boy.jpg';"/>
+          <span class="lang-en">Ahmad Khaled</span>
+          <span class="lang-ar">أحمد خالد</span>
+        </div>
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/Oumaima.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+          <span class="lang-en">Oumaima El Mahdad</span>
+          <span class="lang-ar">أميمة المحداد</span>
+        </div>
+        <div class="team-card boy">
+          <img src="./Images/Personal Picture/khalid.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/boy.jpg';"/>
+          <span class="lang-en">Khaled Bin Touq</span>
+          <span class="lang-ar">خالد بن طوق</span>
+        </div>
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/Aysha.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+          <span class="lang-en">Aisha Zoarab</span>
+          <span class="lang-ar">عائشة زعرب</span>
+        </div>
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/Samar.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+          <span class="lang-en">Samar Alchakouch</span>
+          <span class="lang-ar">سمر الشاكوش</span>
+        </div>
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/amna.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+          <span class="lang-en">Amna Alzaabi</span>
+          <span class="lang-ar">آمنة الزعابي</span>
+        </div>
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/Shamsa.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+          <span class="lang-en">Shamsa Alsenaidi</span>
+          <span class="lang-ar">شمسة السنيدي</span>
+        </div>
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/Maryam.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+          <span class="lang-en">Maryam Alshamsi</span>
+          <span class="lang-ar">مريم الشامسي</span>
+        </div>
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/Maitha.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+          <span class="lang-en">Maitha Aljneibi</span>
+          <span class="lang-ar">ميثاء الجنيبي</span>
+        </div>
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/Yara.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+          <span class="lang-en">Yara Elrefaey</span>
+          <span class="lang-ar">يارا الرفاعي</span>
+        </div>
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/Yousra.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+          <span class="lang-en">Yousra Raed</span>
+          <span class="lang-ar">يسرَى رائد</span>
+        </div>
+        <div class="team-card boy">
+          <img src="./Images/Personal Picture/Abdulrahman.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/boy.jpg';"/>
+          <span class="lang-en">Abdalrhman Salem</span>
+          <span class="lang-ar">عبدالرحمن سالم</span>
+        </div>
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/Somaya.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+          <span class="lang-en">Somaya Almotawa</span>
+          <span class="lang-ar">سمية المطوع</span>
+        </div>
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/Fatima Almidfa.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+          <span class="lang-en">Fatima Almidfa</span>
+          <span class="lang-ar">فاطمة المدفع</span>
+        </div>
+        <div class="team-card boy">
+          <img src="./Images/Personal Picture/Ahmed Osman.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/boy.jpg';"/>
+          <span class="lang-en">Ahmed Osman</span>
+          <span class="lang-ar">أحمد عثمان</span>
+        </div>
+        <div class="team-card boy">
+          <img src="./Images/Personal Picture/Hamad.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/boy.jpg';"/>
+          <span class="lang-en">Hamad Albloushi</span>
+          <span class="lang-ar">حمد البلوشي</span>
+        </div>
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/Nisreen.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/boy.jpg';"/>
+          <span class="lang-en">Nisreen Saleh</span>
+          <span class="lang-ar">نسرين صالح</span>
+        </div>
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/Khadijah.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+          <span class="lang-en">Khadijah Ali</span>
+          <span class="lang-ar">خديجة علي</span>
+        </div>
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/jinan.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+          <span class="lang-en">Jinan Elamin</span>
+          <span class="lang-ar">جنان الأمين</span>
+        </div>
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/Malak.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+          <span class="lang-en">Malak Ahmed</span>
+          <span class="lang-ar">ملك أحمد</span>
+        </div>
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/Nawal.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+          <span class="lang-en">Nawal Alzaiem</span>
+          <span class="lang-ar">نوال الزعيم</span>
+        </div>
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/Sedra.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+          <span class="lang-en">Sedrh Nofal</span>
+          <span class="lang-ar">سدرة نوفل</span>
+        </div>
+        <div class="team-card girl">
+          <img src="./Images/Personal Picture/Dana.jpg" class="team-avatar" onerror="this.onerror=null;this.src='./Images/girl.jpg';"/>
+          <span class="lang-en">Dana Al Horani</span>
+          <span class="lang-ar">دانة الحوراني</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="teamModal" class="team-modal" hidden>
+      <div class="modal-overlay"></div>
+      <div class="modal-box">
+        <button class="close-modal" aria-label="Close modal">&times;</button>
+        <h3 id="modalName">Name</h3>
+        <p id="modalQuote">Quote goes here.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h2 data-en="Professional Shadow Program 2025" data-ar="برنامج الظل الوظيفي 2025"> Professional Shadow Program 2025 </h2>
+        <p data-en="Sharjah Government Media Bureau" data-ar="المكتب الإعلامي لحكومة الشارقة"> Sharjah Government Media Bureau</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://www.instagram.com/shj.media?igsh=MWFoejBiYmdmZXh2Zw==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/shjmedia?s=21" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-en="© 2025 PSP Interns. All rights reserved." data-ar="© 2025 جميع الحقوق محفوظة لمتدربي برنامج الظل الوظيفي."> © 2025 PSP Interns. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,157 @@
+/* ==== About Us Section Styles ==== */
+.about-us {
+  font-family: 'Merriweather', serif;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  max-width: 900px;
+}
+
+/* Headings */
+.about-us h1,
+.about-us h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--about-heading-color);
+  transition: color 0.3s ease;
+}
+
+/* Make About Us h1 bigger */
+.about-us h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+/* Paragraph */
+.about-us p {
+  line-height: 1.7;
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  color: var(--about-text-color);
+  transition: color 0.3s ease;
+}
+
+/* Video container */
+.about-us .video-container {
+  max-width: 640px; /* smaller video */
+  margin: 1rem auto 2rem auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.about-us video,
+.about-us iframe {
+  width: 100%;
+  height: 360px; /* smaller height */
+  display: block;
+  border-radius: 12px;
+}
+
+/* Supervisors Section */
+.about-us .supervisors {
+  padding-top: 1rem;
+  border-top: 2px solid var(--about-border-color);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-us .supervisors h2 {
+  margin-bottom: 1.5rem;
+  color: var(--about-heading-color);
+}
+
+/* Supervisor list container */
+.about-us .supervisor-list {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Each supervisor */
+.about-us .supervisor {
+  flex: 1 1 220px;
+  text-align: center;
+  color: var(--about-text-color);
+}
+
+/* Placeholder for photo */
+.about-us .supervisor-photo-placeholder {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 1rem auto;
+  background-color: var(--about-photo-bg);
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Names and positions */
+.about-us .name {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.3rem;
+  color: var(--about-text-color);
+}
+
+.about-us .position {
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--about-position-color);
+}
+
+/* ==== Language Toggle ==== */
+/* Hide Arabic text by default */
+.lang-ar {
+  display: none;
+}
+
+/* Show Arabic and hide English when .lang-ar-active is on about-us */
+.about-us.lang-ar-active .lang-ar {
+  display: inline;
+}
+.about-us.lang-ar-active .lang-en {
+  display: none;
+}
+
+/* ==== Light/Dark Mode Variables ==== */
+.about-us.light-mode {
+  --about-bg-color: transparent;
+  --about-text-color: #222;
+  --about-heading-color: #1a1a1a;
+  --about-border-color: #ddd;
+  --about-position-color: #555;
+  --about-photo-bg: #ccc;
+  background-color: var(--about-bg-color);
+  color: var(--about-text-color);
+}
+
+.about-us.dark-mode {
+  --about-bg-color: transparent;
+  --about-text-color: #fff;
+  --about-heading-color: #fff;
+  --about-border-color: #555;
+  --about-position-color: #bbb;
+  --about-photo-bg: #444;
+  background-color: var(--about-bg-color);
+  color: var(--about-text-color);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .about-us .supervisor-list {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-us .supervisor-photo-placeholder {
+    width: 140px;
+    height: 140px;
+  }
+
+  .about-us h1 {
+    font-size: 2.4rem;
+  }
+}

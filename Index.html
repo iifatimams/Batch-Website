@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Impact Makers | صناع الأثر</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+
+</head>
+
+<body class="light-mode" id="pageBody" lang="ar">
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="index.html" class="logo">
+      <span id="logoAr">صناع الأثر</span>
+      <span id="logoEn" hidden>Impact Makers</span>
+    </a>
+
+    <nav class="nav desktop-menu" id="mainMenu">
+      <ul>
+        <li class="dropdown department-dropdown">
+          <button id="depbtn" class="dropdown-toggle" data-en="Departments" data-ar="الإدارات">Departments</button>
+          <ul class="dropdown-menu" id="departmentMenu">
+            <li><a href="IT.html" data-en="IT Department" data-ar="إدارة التقنية المتقدمة">IT Department</a></li>
+            <li><a href="Acct.html" data-en="Accounting Department" data-ar="إدارة الشؤون المالية">Accounting Department</a></li>
+            <li><a href="hr.html" data-en="HR Department" data-ar="إدارة الموارد البشرية">HR Department</a></li>
+            <li><a href="Media.html" data-en="Media Department" data-ar="وحدة الرؤى الإعلامية">Media Department</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+        <li><a href="AboutUs.html" data-en="About Us" data-ar="عن صناع الأثر">About Us</a></li>
+        <li><a href="internOfWeek.html" data-en="Intern Spotlight" data-ar="متدرب الأسبوع">Intern Spotlight</a></li>
+
+        <li class="dropdown prayer-dropdown">
+          <button id="prayerBtn" class="dropdown-toggle" data-en="🕌 Fajr: 4:10 AM" data-ar="🕌 صلاة الفجر: 4:10">🕌 صلاة الفجر: 4:10</button>
+          <ul class="dropdown-menu" id="prayerMenu">
+            <li data-en="Fajr: 3:55 AM" data-ar="صلاة الفجر: 3:55">صلاة الفجر: 3:55</li>
+            <li data-en="Dhuhr: 12:19 PM" data-ar="صلاة الظهر: 12:19">صلاة الظهر: 12:19</li>
+            <li data-en="Asr: 3:42 PM" data-ar="صلاة العصر: 3:42">صلاة العصر: 3:42</li>
+            <li data-en="Maghrib: 7:11 PM" data-ar="صلاة المغرب: 7:11">صلاة المغرب: 7:11</li>
+            <li data-en="Isha: 8:41 PM" data-ar="صلاة العشاء: 8:41">صلاة العشاء: 8:41</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-controls">
+      <button id="langButton" data-en="العربية" data-ar="English">العربية</button>
+      <button id="darkButton" data-en="Dark Mode" data-ar="الوضع الداكن">Dark Mode</button>
+      <button id="menuButton" class="menu-icon" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="mobile-menu">
+    <ul id="mobileMenuList"></ul>
+
+    <!-- Mobile Prayer Times -->
+    <ul class="mobile-dropdown">
+      <li class="dropdown-toggle" id="mobilePrayerToggle">Fajr</li>
+      <ul class="dropdown-menu" id="mobilePrayerMenu">
+        <li data-en="Fajr: 3:55 AM" data-ar="صلاة الفجر: 3:55">صلاة الفجر: 3:55</li>
+        <li data-en="Dhuhr: 12:19 PM" data-ar="صلاة الظهر: 12:19">صلاة الظهر: 12:19</li>
+        <li data-en="Asr: 3:42 PM" data-ar="صلاة العصر: 3:42">صلاة العصر: 3:42</li>
+        <li data-en="Maghrib: 7:11 PM" data-ar="صلاة المغرب: 7:11">صلاة المغرب: 7:11</li>
+        <li data-en="Isha: 8:41 PM" data-ar="صلاة العشاء: 8:41">صلاة العشاء: 8:41</li>
+      </ul>
+    </ul>
+  </div>
+</body>
+
+  <main class="home-main">
+    <section class="batch-intro-pro">
+      <div class="intro-text">
+        <h1 class="batch-title" data-en="Welcome to Professional Shadow Program Interns 2025" data-ar="مرحبًا بكم في تدريب دفعة صناع الأثر من برنامج الظل الوظيفي 2025">
+          Welcome to Professional Shadow Program Interns 2025
+        </h1>
+        <p class="welcome-message" data-en="This site helps you explore your department and stay connected." data-ar="يساعدك هذا الموقع بالتعرف على إدارات دفعة صناع الأثر">
+            This site helps you explore your department and stay connected.
+        </p>
+      </div>
+      <div class="logo-container">
+        <img src="Images/logo.JPG" alt="SGMB Logo" class="intro-logo" />
+      </div>
+    </section>
+
+    <section class="departments-fullpage" aria-label="Departments at SGMB Internship 2025">
+
+        <h2 class="section-title" data-en="Explore SGMB Departments" data-ar="استكشف إدارات صناع الأثر">
+          Explore SGMB Departments
+        </h2>
+        <p class="section-subtitle" data-en="Click on a department to learn more" data-ar="اضغط على الإدارة لمعرفة المزيد">
+          Click on a department to learn more
+        </p>
+      
+        <div class="departments-grid">
+        
+        <a href="IT.html" class="dept-card-link">
+          <article class="dept-card" data-dept="IT" tabindex="0">
+            <div class="card-img" style="background-image: url('images/IT.jpg');" aria-hidden="true"></div>
+            <div class="card-overlay"></div>
+            <div class="card-text">
+              <h3 class="dept-name" data-en="Information Technology" data-ar="التقنية المتقدمة">Information Technology</h3>
+              <p class="dept-desc" data-en="Handling all tech and IT infrastructure." data-ar="إدارة كل ما يتعلق بالتقنية والبنية التحتية لتكنولوجيا المعلومات.">
+                Handling all tech and IT infrastructure.
+              </p>
+            </div>
+          </article>
+        </a>
+        
+        <a href="Acct.html" class="dept-card-link">
+          <article class="dept-card" data-dept="ACCOUNTING" tabindex="0">
+            <div class="card-img" style="background-image: url('images/Accounts.jpg');" aria-hidden="true"></div>
+            <div class="card-overlay"></div>
+            <div class="card-text">
+              <h3 class="dept-name" data-en="Accounting" data-ar="الشؤون المالية">Accounting</h3>
+              <p class="dept-desc" data-en="Managing finances and audits." data-ar="إدارة الشؤون المالية والتدقيق.">
+                Managing finances and audits.
+              </p>
+            </div>
+          </article>
+        </a>
+
+        <a href="hr.html" class="dept-card-link">
+          <article class="dept-card" data-dept="HR" tabindex="0">
+            <div class="card-img" style="background-image: url('images/HR.jpg');" aria-hidden="true"></div>
+            <div class="card-overlay"></div>
+            <div class="card-text">
+              <h3 class="dept-name" data-en="Human Resources" data-ar="الموارد البشرية">Human Resources</h3>
+              <p class="dept-desc" data-en="Employee relations and development." data-ar="علاقات الموظفين والتطوير.">
+                Employee relations and development.
+              </p>
+            </div>
+          </article>
+        </a>
+
+        <a href="Media.html" class="dept-card-link">
+          <article class="dept-card" data-dept="MEDIA" tabindex="0">
+            
+            <div class="card-img" style="background-image: url('images/Media.jpg');" aria-hidden="true"></div>
+            <div class="card-overlay"></div>
+            <div class="card-text">
+              <h3 class="dept-name" data-en="Media" data-ar="الرؤى الإعلامية">Media</h3>
+              <p class="dept-desc" data-en="Content creation and broadcasting." data-ar="إنشاء المحتوى والبث.">
+                Content creation and broadcasting.
+              </p>
+            </div>
+          </article>
+        </a>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobileMenu">
+      <ul id="mobileMenuList"></ul>
+    </nav>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h2 data-en="Professional Shadow Program 2025" data-ar="برنامج الظل الوظيفي 2025"> Professional Shadow Program 2025 </h2>
+        <p data-en="Sharjah Government Media Bureau" data-ar="المكتب الإعلامي لحكومة الشارقة"> Sharjah Government Media Bureau</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://www.instagram.com/shj.media?igsh=MWFoejBiYmdmZXh2Zw==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/shjmedia?s=21" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-en="© 2025 PSP Interns. All rights reserved." data-ar="© 2025 جميع الحقوق محفوظة لمتدربي برنامج الظل الوظيفي."> © 2025 PSP Interns. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
